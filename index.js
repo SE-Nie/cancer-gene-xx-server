@@ -5,7 +5,7 @@ var session = require('express-session')
 const cors = require("cors");
 port = process.env.PORT || 4000
 
-app.use(cors());
+app.use(cors({credentials: true, origin: 'https://focused-sinoussi-d2664b.netlify.app/'));
 app.use(express.json());
 
 app.use(
