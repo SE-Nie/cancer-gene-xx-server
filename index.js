@@ -10,7 +10,7 @@ app.use(express.json());
 
 app.use(
   session({
-    resave: true,
+    resave: false,
     saveUninitialized: true,
     secret: 'keyboard cat',
     //cookie: {sameSite: "none"},
