@@ -13,11 +13,12 @@ app.use(
     resave: false,
     saveUninitialized: true,
     secret: 'keyboard cat',
-   // cookie: {sameSite: "none"},
+    //cookie: {sameSite: "none"},
     
   })
 ); 
 app.get('/', (req, res) => {
+  console.log(req.sessionID)
   res.send('Hello World!')
 })
 
