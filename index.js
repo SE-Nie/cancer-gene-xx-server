@@ -8,15 +8,15 @@ port = process.env.PORT || 4000
 app.use(cors);
 app.use(express.json());
 
-/* app.use(
+app.use(
   session({
     resave: false,
     saveUninitialized: true,
     secret: 'keyboard cat',
-    cookie: {sameSite: "none"},
+   // cookie: {sameSite: "none"},
     
   })
-); */
+); 
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
